@@ -56,7 +56,7 @@ function arguments (arg1, arg2, arg3) {
         return numberCovert1 + numberCovert2 + numberCovert3;
     }
 }
-var ifNumbers = arguments(3,9,"9")
+var ifNumbers = arguments(3,9,"p")
 
 //console.log(ifNumbers)
 
@@ -69,7 +69,52 @@ paragraph.innerHTML = ifNumbers;
 
 //Question 5
 
+var selectHeading = document.querySelector (".heading");
+
+
+function buttonHeading () {
+    var headingSelect = document.querySelector ("h1");
+    headingSelect.innerHTML += ": Updated";
+    //headingSelect.innerHTML = "Functions:" +" "+ "Updated" +" "+ "Updated";
+};
+selectHeading.onclick = buttonHeading;
+//headingSelect.innerHTML = "Functions: Updated: Updated";
+
+
+
 //Question 6
 
+var buttonTitle = document.querySelector (".title");
+var selectTitle = document.querySelector ("title");
+
+function changeTitle () {
+
+    selectTitle.innerHTML = "I've been updated";
+}
+
+buttonTitle.onclick = changeTitle;
+//console.dir(document);
 
 //Question 7
+
+var buttonRed = document.querySelector (".red");
+var buttonOrange = document.querySelector (".orange");
+var buttonPink = document.querySelector (".pink");
+var body = document.querySelector ("body");
+
+  
+
+function turnRed () {
+    body.style.backgroundColor = "red";
+}
+buttonRed.onclick = turnRed;
+
+function turnOrange () {
+    body.style.backgroundColor = "orange";
+}
+buttonOrange.onclick = turnOrange;
+
+function turnPink () {
+    body.style.backgroundColor = "pink";
+}
+buttonPink.onclick = turnPink;
